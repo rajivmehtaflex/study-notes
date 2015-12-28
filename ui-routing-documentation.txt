@@ -1,0 +1,56 @@
+UI-Router
+Install UI-Routing
+Implement UI-Routing
+    1.you need to get the service reference in config file of the module 
+    2.you need to set the  state object 
+    
+   <Module>.config(function ($stateProvider) {
+            $stateProvider
+                .state('index', {
+                    url: '/',
+                    templateUrl: 'app/login/template/login.tpl.html'
+                })
+    })
+Implement Nested UI-routing
+    Two way to implement Nested routing
+    1.Define Abstract State as parent state
+        You need this in followin scenario
+        
+    To prepend a url to all child state urls.
+    To insert a template with its own ui-view(s) that its child states will populate.
+        Optionally assign a controller to the template. The controller must pair to a template.
+        Additionally, inherit $scope objects down to children, just understand that this happens via the view hierarchy, not the state hierarchy.
+    To provide resolved dependencies via resolve for use by child states.
+    To provide inherited custom data via data for use by child states or an event listener.
+    To run an onEnter or onExit function that may modify the application in someway.
+        
+        Implement Abstract state
+        
+                .state('index', {
+                    url: '/index',
+                    abstract: true,  
+                    templateUrl: 'app/login/template/index.tpl.html' //following template behave as container
+                            for child state.It must have ui-view.
+                                                
+                })
+        define Decendent State
+        
+                .state('index.startup', {
+                    url: '/startup',
+                    templateUrl: 'app/login/template/login.tpl.html'
+                })
+                
+    2.Using Normal state as parent state
+        Implement Parent state
+                .state('index.startup', {
+                    url: '/startup',
+                    templateUrl: 'app/login/template/login.tpl.html'
+                })
+            
+        define Decendent State
+            .state('index.startup.step1',{
+                    url: '/step1',
+                    template: '<h1>Nested Data</h1>',
+                })
+
+            

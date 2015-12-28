@@ -1,0 +1,138 @@
+
+Type Script
+	Basic Type
+	
+	Function
+		Description:Here there is 4 type of function we used in TypeScript
+		
+		Named Function
+			Normal function that developer used.
+			
+		Anonymous Function with Type inference
+		
+			Declaration:	
+				
+				var add=function(param1:number,param2:number):number{
+						return param1+param2;
+				}
+				
+			Usages:
+			
+				var sumData=add(4,3);
+				console.log(sumData);
+		
+		Lambda Function
+			Declaration:
+				var conversion=(param:String)=>param.toUpperCase();
+				
+			Usages:
+				console.log(conversion('mantra'));
+				
+	Classes
+		Classes comprise of four element
+			-Constructor
+				Description:Like c# Here you can define the constructor using special keyword "constructor"
+				
+				constructor(message:string){
+					console.log('invoke Class');
+				}
+				
+				You can create public/private member with following short-cut
+				
+				constructor(private name:String){
+					console.log(name);
+				}
+				
+			-Fields
+			-Property
+				Description:Just like c# you can define the property of the class like following way
+				//Define private member				
+				private _message:string;
+				
+				//Set Getter/Setter function
+				get message(){
+					return 'GD Says: '+this._message;
+				}
+				
+				set message(val:string){
+					this._message=val;
+				}
+			-Method
+				Consider 'Function' Section of this document
+			-Static Function
+				Consider 'Function' Section of this document
+			-Static Property
+		Apply Inhertance	
+			using Extend key word
+		Interface
+			This is like normalization of Table.Here is we accumalted class.
+			In interface we create common member of class in form or interface.
+			Injected into class.
+			Implement Logic into class.
+			Consume Interface.  
+				create Interface type object
+					interface IPlant{
+						name: string;
+						genus: string;
+						category?: string; //you can make it optional also	
+					}
+					
+					class Plant implements IPlant{
+						name: string;
+						genus: string;
+						category: string;	
+					}
+					
+					//This works because the definitions of IPlant and Plant are identical
+					var p: IPlant;
+					p = new Plant()
+					
+			Array Type:				
+				There is TypeScript special array call Array type interface in which we define collection which hold object that has perticular interface
+				
+				interface AccountArray{
+					[index:number]:iAccount //this define the object with specific type Object
+					length:number
+				}
+				
+				var acctArray:AccountArray=[new accounttype(),new brokaragetype()]
+			Generics:
+				Same concept as C#.It's pure concept of typescript and nothing todo with ES5 javascript 
+				We can apply Generics following concept of javascript
+				- Class
+					Declaration:you need to declare it by using <T> 
+					Usages:you need to use it by pass perticular type like 
+					var obj:Student=new Student<Collage>(); 
+				- function
+					Declare:
+						setCaption<T>(text:T){
+							return 'Hello '+text;
+						}
+					Usages
+						home.setCaption(430)						
+				- Interface	
+				-You can set constrain to generics
+				Means you can't pass anything but only pass which hold certain interface 
+			Modules:
+				There is two type of module
+					-Internal
+						Create module
+							module utility{
+								//This is private Class only accessible within module
+								class log{....}
+								
+								//This class can be accessible outside the module
+								export convertToCaption{...}
+							}
+							
+							using internal module	
+								var obj=utility.convertToCaption();
+							you can also create alias in caller for short reference.
+								import util=utility;
+								var obj=util.convertToCaption();	
+					-External				
+Terminology
+	Type inference:This describe a process that what kind or type of object is this by RunTime.i.e. if you set any variable
+	as 420 it's automatically become numeric variable.
+	
+	
