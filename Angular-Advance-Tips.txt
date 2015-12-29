@@ -1,0 +1,61 @@
+Using Angular BootStrap for apply angular Framwork on DOM event i.e. on click event of button
+
+Like Following way
+
+        var cmdButton = document.querySelector("#cmdButton");
+        cmdButton.addEventListener('click', function () {
+            angular.bootstrap(document, ['sample']);
+        })
+
+controller as
+
+How:
+
+.directive('gRendering', function () {
+        return {
+            restrict: 'E',
+            template: '<span>One of Employee name is {{gdata.sample}}</span>',
+            controller: function () {
+                this.sample="pratik"
+            },
+            controllerAs:'gdata'
+
+        }
+    });
+	
+Advantage:
+
+Using the "controller as" syntax allows you to directly reference the controller object within the
+template. By doing this, you are able to assign attributes to the controller object itself rather
+than to $scope.
+
+You get more information in the view. By using this syntax, you are able to directly
+infer the source of the object from only the template, which is something you could
+not do before.
+
+You are able to define directive controllers anonymously and define them where you
+choose. Being able to rebrand a function object in a directive allows a lot of flexibility
+in the application structure and locality of definition.	
+
+	//Define Handler
+	var unbind = $rootScope.$on('busEvent', function() {
+		$log.log('Handler called!');
+	});
+	
+	//This handler will gone when controller is going to destroy
+	$scope.$on('$destroy', unbind);
+
+
+Cusom Event in Angular
+
+There is 4 approch to Custom Event
+
+1. using $rootScope.$broadCast()
+2. using $rootScope.$emit() 
+	Note:you also need to clean this listner by using $digest Event
+3.Event bus as a service.
+	Create a service for Raise/Catch Event 
+4.Event bus as a decorator	
+
+	
+Polymer.dom(this.root).childNodes ->Reference of all nodes include lightdom
