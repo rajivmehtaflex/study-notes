@@ -1,0 +1,23 @@
+code . -open visual studio code normal way
+code <filename> -r -open perticular file
+code <folder> -n -open code editor from other folder with new instance
+code -g <filepath>:<lineno>:<coloumnno> -open perticular on perticular line on perticular column also
+
+type of project supported
+
+package.json-node project
+bower.json
+tsconfig.json-typescript project
+jsconfig.json-ecmascript 5 project
+
+visual studio code command
+ctrl+p ->open file
+ctrl+g->goto line
+ctrl+p[two time] will naviage to history of files
+ctrl+shift+p -> activate the command pallate
+ctrl+w close code window
+ctrl + \ open code window
+ctrl+b to toggle side bar
+
+
+
