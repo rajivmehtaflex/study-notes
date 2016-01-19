@@ -1,0 +1,18 @@
+Anatomy of Tween
+
+Implementation
+
+You need to call TweenLite LIb in conjuction with CSSPlugin.js
+
+Apply Tween
+
+var tweenRef=TweenLite.to(<targetObject>,<Duration>,<Property>)
+
+Type of Property:
+
+    Event Type Property(onComplete,onUpdate etc...)
+    Helper Property
+    CSS Property(All CSS Relate Property  etc...)
+    Time Related Property(Delay,ReverseDelay  etc...)
+Method:    
+    Control Method Like(play,pause,Reverse)
