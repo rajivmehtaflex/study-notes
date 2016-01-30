@@ -59,3 +59,17 @@ There is 4 approch to Custom Event
 
 	
 Polymer.dom(this.root).childNodes ->Reference of all nodes include lightdom
+
+New in Angular 1.3.x
+
+$anchorScroll Service
+	Allow User to scroll acording their URL
+	$anchorScroll.yOffSet Allow user to set distance between top border of browser and anchor container.
+	
+$q service now apply with native Promises
+
+Directives
+
+Now Default restriction is set 	to 'AE'
+
+<ng-transclude>is now as Directives not as attribute
