@@ -1,3 +1,6 @@
+
+Following code is illustrate how to use $watch,$on,$Broadcast,$emit in scope less programming.
+
 app.controller('Ctrl', function ($scope) {
     this.name = 'name';
 
@@ -7,3 +10,6 @@ app.controller('Ctrl', function ($scope) {
 
     });
 });
+Ref. Site 
+    ->http://www.toptal.com/angular-js/tips-and-practices
+    ->http://www.bennadel.com/blog/2852-understanding-how-to-use-scope-watch-with-controller-as-in-angularjs.htm
