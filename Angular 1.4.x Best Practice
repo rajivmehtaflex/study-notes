@@ -1,0 +1,9 @@
+app.controller('Ctrl', function ($scope) {
+    this.name = 'name';
+
+    $scope.$watch(angular.bind(function () {
+      return this.title
+    }), function (oldVal, newVal) {
+
+    });
+});
