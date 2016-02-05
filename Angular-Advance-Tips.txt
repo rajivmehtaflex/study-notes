@@ -73,3 +73,9 @@ Directives
 Now Default restriction is set 	to 'AE'
 
 <ng-transclude>is now as Directives not as attribute
+
+Make it One-Way binding
+
+By set following operator
+{{::title}}
+
