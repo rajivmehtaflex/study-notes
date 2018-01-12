@@ -16,3 +16,13 @@ Type of Property:
     Time Related Property(Delay,ReverseDelay  etc...)
 Method:    
     Control Method Like(play,pause,Reverse)
+    
+    4. Responsive Image Sizes
+We are firmly in the era of mobile Internet browsing, making it imperative to style websites in such a way that visual content looks great, regardless of the device used to browse sites. There are various levels of complexity to set image sizes so that they adjust to the devices used for browsing a website, however, simple is always better.
+
+To make an image size responsive, you simply need to make sure its width displays at most 100% of its maximum width and set its display height to automatically adjust depending on display width, image width, and image height. The code for this CSS image effect is as follows:
+
+img {
+  max-width: 100%;
+  height: auto;
+}
