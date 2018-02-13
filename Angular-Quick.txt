@@ -1,0 +1,2 @@
+ng new fbg-demo --skip-tests --minimal --skip-install --routing
+ng g c fm-radio/audio --module fm-radio --flat 
