@@ -4,9 +4,7 @@
 
 >[How To Enable SFTP Without Shell Access on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-enable-sftp-without-shell-access-on-ubuntu-20-04)
 
-<br>
 <hr>
-<br>
 
 ### <b>For Disk Partiction.</b>
 >[How To Partition and Format Storage Devices in Linux](https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux)
