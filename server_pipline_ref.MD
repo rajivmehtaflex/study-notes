@@ -10,8 +10,8 @@
 
 ### <b>For Disk Partiction.</b>
 >[How To Partition and Format Storage Devices in Linux](https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux)
-<br>
-[An Introduction to Storage Terminology and Concepts in Linux](https://www.digitalocean.com/community/tutorials/an-introduction-to-storage-terminology-and-concepts-in-linux)
+
+>[An Introduction to Storage Terminology and Concepts in Linux](https://www.digitalocean.com/community/tutorials/an-introduction-to-storage-terminology-and-concepts-in-linux)
 
 <hr>
 
