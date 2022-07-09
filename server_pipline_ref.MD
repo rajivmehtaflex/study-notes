@@ -1,8 +1,9 @@
 ### <b>For Setup SFTP Server.</b>
 
 >[Setup SFTP Server Ubuntu](https://linuxhint.com/setup-sftp-server-ubuntu/)
-<br>
->[How To Enable SFTP Without Shell Access on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-enable-sftp-without-shell-access-on-ubuntu-20-04)
+
+[How To Enable SFTP Without Shell Access on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-enable-sftp-without-shell-access-on-ubuntu-20-04)
+
 <br>
 <hr>
 <br>
