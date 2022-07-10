@@ -31,3 +31,11 @@
 >[ngrok alternative: localtunnel + Caddy + Lets Encrypt](https://morph027.gitlab.io/blog/localtunnel-ngrok/)
 
 ---
+
+>[A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.](https://github.com/fatedier/frp)
+
+>[Expose your local service to public: Ngrok, FRP, localtunnel](https://www.51sec.org/2019/01/17/expose-your-local-service-to-public-ngrok-frp-localtunnel/)
+
+>[Exposing your local server to the internet over NAT using FRP](https://gabrieltanner.org/blog/port-forwarding-frp/)
+
+---
