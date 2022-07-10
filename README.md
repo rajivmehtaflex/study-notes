@@ -1,4 +1,7 @@
 # study-notes
-This Repo contain my notes
 
-Here is the second version
+>><b>This Repo contain my notes</b>
+---
+>><b>Here is the second version</b>
+
+<img src='./kk.jpg' />
